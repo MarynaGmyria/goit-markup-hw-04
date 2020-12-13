@@ -456,7 +456,7 @@ img {
 .button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .button-list-item {
@@ -471,11 +471,18 @@ img {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 
 .button-list-item:hover {
   background-color: var(--accent-color);
   color: white;
+}
+
+.button-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /*=========== END BUTTON ==========*/
