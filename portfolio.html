@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+<!------------------- HEADER ------------------------->
+
     <header class="header">
         <div class="container">
             <nav class="navigation">
@@ -32,18 +35,29 @@
             <address class="address">
                 <ul class="addres-menu">
                     <li class="address-item">
-                        <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="header-mail" href="mailto:info@devstudio.com">
+                            <svg class="mail-icon">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>           
                     </li>
                     <li class="address-item">
-                        <a class="header-tell" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="header-tell" href="tel:+380961111111">
+                            <svg class="phone-icon">
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
             </address>
         </div>
     </header>
 
+    <!------------------- BUTTON ------------------------------>
+
     <main>
-        <!--HERO-->
         <section class="button-portfolio" >
             <div class="container">
                 <h1 class="button-title">Invisible heading</h1>
@@ -62,107 +76,108 @@
                     </li>
                     <li>
                         <button class="button-list-item" type="button">Маркетинг</button>
-                    </li>
-
-                    
+                    </li>                   
                 </ul>
             </div>
            
-            <!--Portfolio-->
+<!------------------- Portfolio ---------------------------->
 
             <div class="container">
                 <h2 class="portfolio-title">Invisible heading</h2>
                 <ul class="portfolio-list">
                     <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-1.jpg" alt="Технокряк" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Технокряк</h3>
-                            <p class="text-portfolio">Веб-сайт</p>
-                        </div>
-                    </li>
-            
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-1.jpg" alt="Технокряк" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Технокряк</h3>
+                                <p class="text-portfolio">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>      
                     <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-2.jpg" alt="Постер" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Постер New Orlean vs Golden Star</h3>
-                            <p class="text-portfolio">Дизайн</p>
-                        </div>
-            
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-2.jpg" alt="Постер" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Постер New Orlean vs Golden Star</h3>
+                                <p class="text-portfolio">Дизайн</p>
+                            </div>
+                        </a>      
                     </li>
-            
                     <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-3.jpg" alt="Ресторан Seafood" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Ресторан Seafood</h3>
-                            <p class="text-portfolio">Приложение</p>
-                        </div>
-            
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-3.jpg" alt="Ресторан Seafood" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Ресторан Seafood</h3>
+                                <p class="text-portfolio">Приложение</p>
+                            </div>
+                        </a>          
                     </li>
-            
                     <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-4.jpg" alt="Проект Prime" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Проект Prime</h3>
-                            <p class="text-portfolio">Маркетинг</p>
-                        </div>
-            
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-4.jpg" alt="Проект Prime" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Проект Prime</h3>
+                                <p class="text-portfolio">Маркетинг</p>
+                            </div>
+                        </a>                       
                     </li>
-            
                     <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-5.jpg" alt="Проект Boxes" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Проект Boxes</h3>
-                            <p class="text-portfolio">Приложение</p>
-                        </div>
-            
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-5.jpg" alt="Проект Boxes" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Проект Boxes</h3>
+                                <p class="text-portfolio">Приложение</p>
+                            </div>
+                        </a>           
+                    </li>        
+                    <li class="portfolio-list-item">
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-6.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Inspiration has no Borders</h3>
+                                <p class="text-portfolio">Веб-сайт</p>
+                            </div>
+                        </a>           
                     </li>
-            
                     <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Inspiration has no Borders</h3>
-                            <p class="text-portfolio">Веб-сайт</p>
-                        </div>
-            
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-7.jpg" alt="Издание Limited Edition" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Издание Limited Edition</h3>
+                                <p class="text-portfolio">Дизайн</p>
+                            </div>
+                        </a>              
+                    </li>      
+                    <li class="portfolio-list-item">
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-8.jpg" alt="Проект LAB" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Проект LAB</h3>
+                                <p class="text-portfolio">Маркетинг</p>
+                            </div>
+                        </a>                      
                     </li>
-            
                     <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-7.jpg" alt="Издание Limited Edition" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Издание Limited Edition</h3>
-                            <p class="text-portfolio">Дизайн</p>
-                        </div>
-            
-                    </li>
-            
-                    <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-8.jpg" alt="Проект LAB" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Проект LAB</h3>
-                            <p class="text-portfolio">Маркетинг</p>
-                        </div>
-                    </li>
-            
-                    <li class="portfolio-list-item">
-                        <img src="./images/portfolio/portfolio-img-9.jpg" alt="Growing Business" width="370" height="294">
-                        <div class="portfolio-container">
-                            <h3 class="portfolio-subtitle-list-item">Growing Business</h3>
-                            <p class="text-portfolio">Приложение</p>
-                        </div>
+                        <a class="portfolio-list-link" href="">
+                            <img src="./images/portfolio/portfolio-img-9.jpg" alt="Growing Business" width="370" height="294">
+                            <div class="portfolio-container">
+                                <h3 class="portfolio-subtitle-list-item">Growing Business</h3>
+                                <p class="text-portfolio">Приложение</p>
+                            </div>
+                        </a>                       
                     </li>
                 </ul>
-            </div>
-           
-        </section>
-
-        
+            </div>           
+        </section>      
     </main>
+
+<!--------------------- FOOTER --------------------------->
+
     <footer class="footer">
-        <div class="container cl">
+        <div class="container container-footer">
             <div class="container-logo-footer">
                 <div class="d">
                     <a class="logo-footer" href="./index.html" lang="en"><span class="logo-footer-web">Web</span>Studio</a>
-    
                 </div>
                 <address class="address">
                     <ul class="contact-list">
@@ -181,45 +196,39 @@
                 </address>
             </div>
             <div>
-                <p class="follow-us">ПРИСОЕДИНЯЙТЕСЬ<footer-social-list /p>
-                        <ul class="footer-social-list">
-                            <li class="footer-social-item">
-                                <a class="footer-social-link">
-                                    <svg class="footer-social-icon">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-social-item">
-                                <a class="footer-social-link">
-                                    <svg class="footer-social-icon">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-social-item">
-                                <a class="footer-social-link">
-                                    <svg class="footer-social-icon">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer-social-item">
-                                <a class="footer-social-link">
-                                    <svg class="footer-social-icon">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-    
-                        </ul>
+                <p class="follow-us">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footer-social-list">
+                        <li class="footer-social-item">
+                            <a class="footer-social-link">
+                                <svg class="footer-social-icon">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a class="footer-social-link">
+                                <svg class="footer-social-icon">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a class="footer-social-link">
+                                <svg class="footer-social-icon">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a class="footer-social-link">
+                                <svg class="footer-social-icon">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
             </div>
         </div>
-    </footer>
-
-    
-
-
-    
+    </footer> 
 </body>
 </html>

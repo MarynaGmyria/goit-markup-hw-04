@@ -149,6 +149,8 @@ img {
 }
 
 .header-tell {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -158,6 +160,8 @@ img {
 }
 
 .header-mail {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -171,9 +175,35 @@ img {
   color: var(--accent-color);
 }
 
+.header-mail:hover .mail-icon,
+.header-mail:focus .mail-icon {
+  fill: var(--accent-color);
+}
+
 .header-tell:hover,
 .header-tell:focus {
   color: var(--accent-color);
+}
+
+.header-tell:hover .phone-icon,
+.header-tell:focus .phone-icon {
+  fill: var(--accent-color);
+}
+
+.mail-icon {
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+
+.phone-icon {
+  align-items: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--main-text-color);
 }
 
 /* ============ AND HEADER ==============*/
@@ -254,6 +284,17 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+.work-item-icon {
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+
 /* ============ END ABOUT WORK ==============*/
 
 /* ============ TEAM and ABOUT ==============*/
@@ -321,6 +362,8 @@ img {
 .team-list-content-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
   text-align: center;
 }
 
@@ -330,7 +373,7 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .social-list-link {
@@ -361,6 +404,47 @@ img {
 }
 
 /* ============ END TEAM and ABOUT ============*/
+
+/* ============ CLIENTS ============*/
+
+.client-items {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.client-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: solid #afb1b8 1px;
+  border-radius: 4px;
+}
+
+.client-item-icon {
+  fill: #afb1b8;
+  height: 50px;
+}
+
+.client-item-link:hover,
+.client-item-link:focus {
+  background-color: #fff;
+  border-color: var(--accent-color);
+}
+
+.client-item-link:hover .client-item-icon,
+.client-item-link:focus .client-item-icon {
+  fill: var(--accent-color);
+}
+
+/* ============ END CLIENTS ============*/
 
 /*=========== BUTTON ==========*/
 
@@ -446,9 +530,13 @@ img {
   color: var(--main-text-color);
 }
 
+.portfolio-list-link {
+  text-decoration: none;
+}
+
 /*=========== END PORTFOLIO ===========*/
 
-/* ================= CONTACTS =================*/
+/* ================= FOOTER =================*/
 
 .footer {
   background-color: #2f303a;
@@ -468,7 +556,7 @@ img {
   margin-bottom: 20px;
 }
 
-.cl {
+.container-footer {
   display: flex;
 }
 
@@ -495,60 +583,6 @@ img {
 }
 .container-logo-footer {
   margin-right: 70px;
-}
-
-/* ============= END CONTACTS ===============*/
-
-.work-item-icon {
-  display: block;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  padding: 25px 100px;
-}
-
-.client-items {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.client {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
-.client-item-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: solid #afb1b8 1px;
-  border-radius: 4px;
-}
-
-.client-item-icon {
-  fill: #afb1b8;
-  height: 50px;
-}
-
-.mail-icon {
-  align-items: center;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: #afb1b8;
-}
-
-.phone-icon {
-  align-items: center;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: #757575;
 }
 
 .footer-social-list {
@@ -596,13 +630,4 @@ img {
   background-color: var(--accent-color);
 }
 
-.client-item-link:hover,
-.client-item-link:focus {
-  background-color: #fff;
-  border-color: var(--accent-color);
-}
-
-.client-item-link:hover .client-item-icon,
-.client-item-link:focus .client-item-icon {
-  fill: var(--accent-color);
-}
+/* ============= END FOOTER ===============*/
